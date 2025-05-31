@@ -75,8 +75,10 @@ call "%~dp0\uninstall.bat"
 echo Installing mods...
 if not exist "%~dp0..\SeamlessCoop" (
     :: Create and move the Seamless Coop and Mod Loader files and directories
-    powershell -c "Expand-Archive '%~dp0\bin\SeamlessModLoader.zip' -Force '%~dp0\bin\temp'"
-    xcopy /s /y /i "%~dp0\bin\temp\*" "%~dp0..\"
+    powershell -c "Expand-Archive '%~dp0\bin\loader\SeamlessModLoader.zip' -Force '%~dp0\bin\loader'"
+    xcopy /s /y /i "%~dp0\bin\loader" "%~dp0..\"
+    copy /s /y "%~dp0..\SeamlessModLoader.zip" "%~dp0\bin\loader"
+    del /s /q "%~dp0..\SeamlessModLoader.zip"
 )
 cls
 
