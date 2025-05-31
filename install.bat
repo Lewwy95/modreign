@@ -59,7 +59,7 @@ cls
 
 :: Deploy Latest Revision
 echo Deploying latest revision...
-xcopy /s /y "%~dp0\bin\temp\modreign-main" "%~dp0"
+xcopy /s /y "%~dp0\bin\temp\modreign-main\*" "%~dp0"
 cls
 
 :: Apply New Version File
