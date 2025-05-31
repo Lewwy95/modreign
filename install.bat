@@ -106,10 +106,14 @@ cls
 del /s /q "%~dp0\resChecker.txt"
 cls
 
-:: Instruct To Launch Game
+:: Launch Game
 :launch
-echo The modded game is ready to launch from Steam!
+echo This window will now launch the game.
+echo Make sure you have the required game launch arguments set in Steam first!
+echo.
+echo Press to continue to launch the game...
 pause
+start "" "steam://rungameid/2622380"
 
 :: Finish
 endlocal

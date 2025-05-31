@@ -1,0 +1,1 @@
+cmd /c start nrsc_launcher.exe & rem %command%
