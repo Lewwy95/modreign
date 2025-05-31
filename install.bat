@@ -111,7 +111,7 @@ cls
 echo This window will now launch the game.
 echo Make sure you have the required game launch arguments set in Steam first!
 echo.
-echo Press to continue to launch the game...
+echo Launching game...
 pause
 start "" "steam://rungameid/2622380"
 
